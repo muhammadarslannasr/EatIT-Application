@@ -9,16 +9,16 @@ public class User {
     }
 
     public User(String name, String Password) {
-        Name = name;
-        Password = Password;
+        this.Name = name;
+        this.Password = Password;
     }
 
     public String getName() {
-        return Name;
+        return this.Name;
     }
 
     public void setName(String name) {
-        Name = name;
+        this.Name = name;
     }
 
     public String getPassword() {
@@ -26,6 +26,6 @@ public class User {
     }
 
     public void setPassword(String Password) {
-        Password = Password;
+        this.Password = Password;
     }
 }
