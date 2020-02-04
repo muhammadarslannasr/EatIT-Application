@@ -1,16 +1,15 @@
-package com.theftfound.eatitapplication;
+package com.theftfound.eatitapplication.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
-import android.text.style.TypefaceSpan;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import info.hoang8f.widget.FButton;
+import com.theftfound.eatitapplication.R;
 
 public class MainActivity extends AppCompatActivity {
     private Button btnSignUp, btnSignIn;

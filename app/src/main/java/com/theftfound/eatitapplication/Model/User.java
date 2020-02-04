@@ -1,4 +1,4 @@
-package com.theftfound.eatitapplication;
+package com.theftfound.eatitapplication.Model;
 
 public class User {
 
