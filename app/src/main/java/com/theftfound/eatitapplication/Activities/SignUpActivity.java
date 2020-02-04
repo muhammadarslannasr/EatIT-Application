@@ -29,6 +29,7 @@ public class SignUpActivity extends AppCompatActivity {
 
         //Casting Widget's
         edtPhone = findViewById(R.id.edtPhone);
+
         edtName = findViewById(R.id.edtName);
         edtPassword = findViewById(R.id.edtPassword);
         btnSignUp = findViewById(R.id.btnSignUp);
