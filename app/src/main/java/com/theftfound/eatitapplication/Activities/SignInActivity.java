@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -15,6 +16,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.theftfound.eatitapplication.Model.Common;
 import com.theftfound.eatitapplication.R;
 import com.theftfound.eatitapplication.Model.User;
 
@@ -52,7 +54,9 @@ public class SignInActivity extends AppCompatActivity {
                             //Get User Information
                             User user = dataSnapshot.child(edtPhone.getText().toString()).getValue(User.class);
                             if (user.getPassword().equals(edtPassword.getText().toString())) {
-                                Toast.makeText(SignInActivity.this, "Sign In Successfully", Toast.LENGTH_SHORT).show();
+                                Intent intent = new Intent(SignInActivity.this,HomeActivity.class);
+                                Common.currentUser = user;
+                                startActivity(intent);
                             } else {
                                 Toast.makeText(SignInActivity.this, "Wrong Password !!!", Toast.LENGTH_SHORT).show();
                             }
