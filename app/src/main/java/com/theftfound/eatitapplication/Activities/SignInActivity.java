@@ -57,6 +57,7 @@ public class SignInActivity extends AppCompatActivity {
                                 Intent intent = new Intent(SignInActivity.this,HomeActivity.class);
                                 Common.currentUser = user;
                                 startActivity(intent);
+                                finish();
                             } else {
                                 Toast.makeText(SignInActivity.this, "Wrong Password !!!", Toast.LENGTH_SHORT).show();
                             }

@@ -8,8 +8,8 @@ public class User {
     public User() {
     }
 
-    public User(String name, String Password) {
-        this.Name = name;
+    public User(String Name, String Password) {
+        this.Name = Name;
         this.Password = Password;
     }
 
